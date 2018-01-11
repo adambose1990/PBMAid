@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cts.android.pbmaid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cts.android.pbmaid.activity.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cts.android.pbmaid.activity.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.cts.android.pbmaid.activity.DrugSearchActivity"
+            android:label="@string/title_activity_drug_search" >
+        </activity>
+        <activity
+            android:name="com.cts.android.pbmaid.activity.PharmacyActivity"
+            android:label="@string/title_activity_pharmacy" >
+        </activity>
+        <activity
+            android:name="com.cts.android.pbmaid.activity.DrugActivity"
+            android:label="@string/title_activity_drug" >
+        </activity>
+        <activity
+            android:name="com.cts.android.pbmaid.activity.About"
+            android:label="@string/title_activity_about"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.cts.android.pbmaid.activity.PharmacyDetailActivity"
+            android:label="@string/title_activity_pharmacy_detail" >
+        </activity>
+    </application>
+
+</manifest>
