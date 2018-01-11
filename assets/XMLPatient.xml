@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+	<XMLHead>
+		<NoofRecords>1</NoofRecords>
+	</XMLHead>
+	<XMLBody>
+		<PatientData oid="PT0001">
+			<UserName>walter</UserName>
+			<Password>white</Password>
+			<FirstName>Walter</FirstName>
+			<LastName>White</LastName>
+			<ContactNo>34343337</ContactNo>
+			<Email>walterwhite@gmail.com</Email>
+			<AddressLine1>308 Negra Arroyo Lane</AddressLine1>
+			<AddressLine2>Albuquerque, New Mexico</AddressLine2>
+			<InsurancePlans>
+				<InsurancePlanData oid="IP00003">
+					<Type>P</Type>
+					<PlanName>First Health</PlanName>
+					<PlanDesc>Blah Blah Blah</PlanDesc>
+				</InsurancePlanData>
+				<InsurancePlanData oid="IP00011">
+					<Type>S</Type>
+					<PlanName>Second Health</PlanName>
+					<PlanDesc>Bloh Bloh Bloh</PlanDesc>
+				</InsurancePlanData>
+			</InsurancePlans>
+		</PatientData>
+	</XMLBody>
+</Message>

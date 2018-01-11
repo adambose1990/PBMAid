@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+	<XMLHead>
+		<NoofRecords>5</NoofRecords>
+	</XMLHead>
+	<XMLBody>
+		<PharmacyData oid="PH0001">
+			<Name>Pal Pharmacy</Name>
+			<AddressLine1>70 Washington Street</AddressLine1>
+			<AddressLine2>Brooklyn</AddressLine2>
+			<State>NY</State>
+			<ZipCode>11201</ZipCode>
+			<ContactNo>718.624.6048</ContactNo>
+			<Rating>3</Rating>
+			<OpeningTime>0200</OpeningTime>
+			<ClosingTime>2100</ClosingTime>
+		</PharmacyData>
+			
+		<PharmacyData oid="PH0002">
+			<Name>Apollo Pharmacy</Name>
+			<AddressLine1>50 Bridge Street, 5th fl</AddressLine1>
+			<AddressLine2>Brooklyn</AddressLine2>
+			<State>NY</State>
+			<ZipCode>11201</ZipCode>
+			<ContactNo>612.987.1473</ContactNo>
+			<Rating>4</Rating>
+			<OpeningTime>1000</OpeningTime>
+			<ClosingTime>2100</ClosingTime>
+		</PharmacyData>
+		
+		<PharmacyData oid="PH0003">
+			<Name>Bose Pharmacy</Name>
+			<AddressLine1>200 Eastern Pkwy</AddressLine1>
+			<AddressLine2>Brooklyn</AddressLine2>
+			<State>NY</State>
+			<ZipCode>11201</ZipCode>
+			<ContactNo>718.858.2297</ContactNo>
+			<Rating>5</Rating>
+			<OpeningTime>0900</OpeningTime>
+			<ClosingTime>2100</ClosingTime>
+		</PharmacyData>
+		
+		<PharmacyData oid="PH0004">
+			<Name>Ganguli Pharmacy</Name>
+			<AddressLine1>205 Norman Ave</AddressLine1>
+			<AddressLine2>Brooklyn</AddressLine2>
+			<State>NY</State>
+			<ZipCode>11201</ZipCode>
+			<ContactNo>718.383.9380</ContactNo>
+			<Rating>2</Rating>
+			<OpeningTime>0900</OpeningTime>
+			<ClosingTime>2300</ClosingTime>
+		</PharmacyData>
+		
+		<PharmacyData oid="PH0005">
+			<Name>Ray Pharmacy</Name>
+			<AddressLine1>Grand St, Brooklyn</AddressLine1>
+			<AddressLine2>Brooklyn</AddressLine2>
+			<State>NY</State>
+			<ZipCode>11201</ZipCode>
+			<ContactNo>718.638.5000</ContactNo>
+			<Rating>3</Rating>
+			<OpeningTime>0600</OpeningTime>
+			<ClosingTime>2200</ClosingTime>
+		</PharmacyData>
+	</XMLBody>
+</Message>

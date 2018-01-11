@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+	<XMLHead>
+		<NoofRecords>7</NoofRecords>
+	</XMLHead>
+	<XMLBody>
+		<DrugData oid="DR0001">
+			<Name>Bicillin L-A</Name>
+			<Description>Bicillin L-A</Description>
+			<GenOID>GN0002</GenOID>
+			<GenName>Penicillin G</<GenName>>
+			<CompanyName>Company A</CompanyName>
+			<Rating>3</Rating>
+			<OOPE>1.25</OOPE>
+		</DrugData>
+		<DrugData oid="DR0002">
+			<Name>Crysticillin 300 A.S.</Name>
+			<Description>Crysticillin 300 A.S.</Description>
+			<GenOID>GN0002</GenOID>
+			<GenName>Penicillin G</<GenName>>
+			<CompanyName>Company B</CompanyName>
+			<Rating>5</Rating>
+			<OOPE>2.21</OOPE>
+		</DrugData>
+		<DrugData oid="DR0003">
+			<Name>Pentids</Name>
+			<Description>Pentids</Description>
+			<GenOID>GN0002</GenOID>
+			<GenName>Penicillin G</<GenName>>
+			<CompanyName>Company C</CompanyName>
+			<Rating>3</Rating>
+			<OOPE>1.36</OOPE>
+		</DrugData>
+		<DrugData oid="DR0004">
+			<Name>Permapen</Name>
+			<Description>Permapen</Description>
+			<GenOID>GN0002</GenOID>
+			<GenName>Penicillin G</<GenName>>
+			<CompanyName>Company D</CompanyName>
+			<Rating>1</Rating>
+			<OOPE>0.23</OOPE>
+		</DrugData>
+		<DrugData oid="DR0005">
+			<Name>Pfizerpen</Name>
+			<Description>Pfizerpen</Description>
+			<GenOID>GN0002</GenOID>
+			<GenName>Penicillin G</<GenName>>
+			<CompanyName>Company G</CompanyName>
+			<Rating>4</Rating>
+			<OOPE>1.85</OOPE>
+		</DrugData>
+		<DrugData oid="DR0006">
+			<Name>Pfizerpen-AS</Name>
+			<Description>Pfizerpen-AS</Description>
+			<GenOID>GN0002</GenOID>
+			<GenName>Penicillin G</<GenName>>
+			<CompanyName>Company F</CompanyName>
+			<Rating>3</Rating>
+			<OOPE>1.50</OOPE>
+		</DrugData>
+		<DrugData oid="DR0007">
+			<Name>Wycillin</Name>
+			<Description>Wycillin</Description>
+			<GenOID>GN0002</GenOID>
+			<GenName>Penicillin G</<GenName>>
+			<CompanyName>Company P</CompanyName>
+			<Rating>4</Rating>
+			<OOPE>2.00</OOPE>
+		</DrugData>
+	</XMLBody>
+</Message>
