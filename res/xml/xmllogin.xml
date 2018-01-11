@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+	<XMLHead>
+		<NoofRecords>1</NoofRecords>
+	</XMLHead>
+	<XMLBody>
+		<UserData patientoid="PT0001">
+			<UserName>walter</UserName>
+			<Password>white</Password>
+		</UserData>
+	</XMLBody>
+</Message>

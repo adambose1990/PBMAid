@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+	<XMLHead>
+		<NoofRecords>5</NoofRecords>
+	</XMLHead>
+	<XMLBody>
+		<PatientData>
+			<OID></OID>
+			<FirstName></FirstName>
+			<LastName></LastName>
+			<ContactNo></ContactNo>
+			<Email></Email>
+			<AddressLine1></AddressLine1>
+			<AddressLine2></AddressLine2>
+			<InsurancePlans>
+				<InsurancePlanData>
+					<Qualifier></Qualifier>
+					<OID></OID>
+				</InsurancePlanData>
+				<InsurancePlanData>
+					<Qualifier></Qualifier>
+					<OID></OID>
+				</InsurancePlanData>
+			</InsurancePlans>
+		</PatientData>
+	</XMLBody>
+</Message>

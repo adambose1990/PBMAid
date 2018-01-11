@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_selector"
+    tools:context=".HomeActivity" >
+
+    <TextView
+        android:id="@+id/tvHomeHeader"
+        style="@style/header_sub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Local Phermacy" />
+
+    <TextView
+        android:id="@+id/tvHomeWelcomeNote"
+        style="@style/header_sub_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHomeHeader"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Hi "
+        android:textColor="#040404"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/etHomeZipCode"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHomeWelcomeNote"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="ZIP Code"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spHomePlanName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etHomeZipCode"
+        android:layout_marginLeft="40dp"
+        android:prompt="@string/plan_prompt" />
+
+    <Spinner
+        android:id="@+id/spHomeSearch"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spHomePlanName"
+        android:layout_marginLeft="40dp"
+        android:prompt="@string/topic_prompt" />
+
+    <TableLayout
+        android:id="@+id/tlHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spHomeSearch"
+        android:layout_marginTop="30dp" >
+
+        <TableRow
+            android:id="@+id/trHomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btHomeSearch"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25pt"
+                android:layout_weight="50"
+                android:onClick="onClickHandlerHome"
+                android:text="Search" />
+
+            <Button
+                android:id="@+id/btHomeReset"
+                style="@style/button"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15pt"
+                android:layout_weight="50"
+                android:onClick="onClickHandlerHome"
+                android:text="Reset" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

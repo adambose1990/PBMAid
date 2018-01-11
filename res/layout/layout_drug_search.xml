@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    tools:context=".DrugSearchActivity" >
+
+    <TextView
+        android:id="@+id/tvDrugSearchHeader"
+        style="@style/header_sub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Search a Drug" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvDrugSearchHeader"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:id="@+id/thumbnailDrugSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/image_bg"
+            android:padding="3dip" >
+
+            <ImageView
+                android:id="@+id/ivDrugSearchImage"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:src="@drawable/pharmacy" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDrugSearchPHRName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnailDrugSearch"
+            android:layout_toRightOf="@+id/thumbnailDrugSearch"
+            android:text="Pharmacy Name"
+            android:textColor="#040404"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actvDrugSearchDrugName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thumbnailDrugSearch"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:hint="Drug Name" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <TableLayout
+            android:id="@+id/tlDrugSearchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actvDrugSearchDrugName"
+            android:layout_marginTop="50dp" >
+
+            <TableRow
+                android:id="@+id/trDrugSearchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btDrugSearchSearch"
+                    style="@style/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25pt"
+                    android:layout_weight="50"
+                    android:onClick="onClickHandlerDrugSearch"
+                    android:text="Search" />
+
+                <Button
+                    android:id="@+id/btDrugSearchReset"
+                    style="@style/button"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15pt"
+                    android:layout_weight="50"
+                    android:onClick="onClickHandlerDrugSearch"
+                    android:text="Reset" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

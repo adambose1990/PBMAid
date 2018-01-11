@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/list_selector" >
+
+    <TextView
+        android:id="@+id/tvLoginHeader"
+        style="@style/header_sub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <EditText
+        android:id="@+id/etLoginUserName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:hint="User Name" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etLoginPassWord"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLoginUserName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/cbLoginShowPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLoginPassWord"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="onClickHandlerLogin"
+        android:text="Show Password" />
+
+    <TableLayout
+        android:id="@+id/tlLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbLoginShowPass"
+        android:layout_marginTop="30dp" >
+
+        <TableRow
+            android:id="@+id/trLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btLoginLogin"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25pt"
+                android:layout_weight="50"
+                android:onClick="onClickHandlerLogin"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/btLoginReset"
+                style="@style/button"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15pt"
+                android:layout_weight="50"
+                android:onClick="onClickHandlerLogin"
+                android:text="Reset" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

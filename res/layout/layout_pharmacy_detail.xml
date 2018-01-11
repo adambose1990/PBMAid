@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    tools:context=".PharmacyDetailActivity" >
+
+    <TextView
+        android:id="@+id/tvPharmacyDetailHeader"
+        style="@style/header_sub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Pharmacy Details" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvPharmacyDetailHeader"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:id="@+id/thumbnailPharmacyDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/image_bg"
+            android:padding="3dip" >
+
+            <ImageView
+                android:id="@+id/ivPharmacyDetailImage"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:src="@drawable/pharmacy" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPharmacyDetailName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnailPharmacyDetail"
+            android:layout_toRightOf="@+id/thumbnailPharmacyDetail"
+            android:text="Pharmacy Name"
+            android:textColor="#040404"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <RatingBar
+            android:id="@+id/rbPharmacyDetailStar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPharmacyDetailName"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/thumbnailPharmacyDetail"
+            android:numStars="5"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/tvPharmacyDetailContactNo"
+            style="@style/phr_detail_text"
+            android:layout_alignLeft="@+id/thumbnailPharmacyDetail"
+            android:layout_below="@+id/thumbnailPharmacyDetail"
+            android:layout_marginTop="27dp"
+            android:text="Contact Number" />
+
+        <TextView
+            android:id="@+id/tvPharmacyDetailAddl1"
+            style="@style/phr_detail_text"
+            android:layout_alignLeft="@+id/thumbnailPharmacyDetail"
+            android:layout_below="@+id/tvPharmacyDetailContactNo"
+            android:text="Pharmacy Address Line 1" />
+
+        <TextView
+            android:id="@+id/tvPharmacyDetailAddl2"
+            style="@style/phr_detail_text"
+            android:layout_alignLeft="@+id/thumbnailPharmacyDetail"
+            android:layout_below="@+id/tvPharmacyDetailAddl1"
+            android:text="Pharmacy Address Line 2" />
+
+        <TextView
+            android:id="@+id/tvPharmacyDetailState"
+            style="@style/phr_detail_text"
+            android:layout_alignLeft="@+id/thumbnailPharmacyDetail"
+            android:layout_below="@+id/tvPharmacyDetailAddl2"
+            android:text="State" />
+
+        <TextView
+            android:id="@+id/tvPharmacyDetailZIPCode"
+            style="@style/phr_detail_text"
+            android:layout_toRightOf="@+id/tvPharmacyDetailState"
+            android:layout_alignTop="@+id/tvPharmacyDetailState"
+            android:layout_marginLeft="15dp"
+            android:text="ZIP Code" />
+
+        <TextView
+            android:id="@+id/tvPharmacyDetailText"
+            style="@style/phr_detail_text"
+            android:layout_alignLeft="@+id/thumbnailPharmacyDetail"
+            android:layout_below="@+id/tvPharmacyDetailZIPCode"
+            android:layout_marginTop="15dp"
+            android:text="Opening Hours : "
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivPharmacyDetailIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvPharmacyDetailText"
+            android:layout_toRightOf="@+id/tvPharmacyDetailText"
+            android:src="@drawable/indicatorgreen" />
+
+        <TextView
+            android:id="@+id/tvPharmacyDetailOpeningTime"
+            style="@style/phr_detail_text"
+            android:layout_alignLeft="@+id/thumbnailPharmacyDetail"
+            android:layout_below="@+id/tvPharmacyDetailText"
+            android:text="XXXX Hrs - XXXX Hrs" />
+
+        <Button
+            android:id="@+id/btPharmacyDetailSearch"
+            style="@style/button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvPharmacyDetailOpeningTime"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:onClick="onClickPharmacyDetail"
+            android:text="Search Drug" />
+    </RelativeLayout>
+
+</RelativeLayout>

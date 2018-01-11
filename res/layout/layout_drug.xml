@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrugActivity" >
+
+    <TextView
+        android:id="@+id/tvDrugHeader"
+        style="@style/header_sub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Drug List" />
+
+    <RelativeLayout
+        android:id="@+id/paneuProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvDrugHeader"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:id="@+id/thumbnailDrug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/image_bg"
+            android:padding="3dip" >
+
+            <ImageView
+                android:id="@+id/ivDrugImage"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:src="@drawable/pharmacy" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDrugPHRName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnailDrug"
+            android:layout_toRightOf="@+id/thumbnailDrug"
+            android:text="Pharmacy Name"
+            android:textColor="#040404"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/panelProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/paneuProfile"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lvDruglist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_selector" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>
